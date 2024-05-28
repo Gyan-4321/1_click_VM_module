@@ -13,6 +13,9 @@ steps:
 - task: TerraformInstaller@1
   inputs:
     terraformVersion: 'latest'
+- task: CmdLine@2
+  inputs:
+    script: 'sudo chmod 777 Main_Modules'    
 
 - task: TerraformTaskV4@4
   inputs:
@@ -24,9 +27,7 @@ steps:
     backendAzureRmStorageAccountName: 'storage67965'
     backendAzureRmContainerName: 'mycontainer45687'
     backendAzureRmKey: 'prod.terraform.tfstate'
-- task: CmdLine@2
-  inputs:
-    script: 'sudo chmod 777 Main_Modules'
+
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
