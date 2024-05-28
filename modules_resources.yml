@@ -21,6 +21,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Main_Modules'
     backendServiceArm: 'devopsnew'
     backendAzureRmResourceGroupName: 'testingRG'
     backendAzureRmStorageAccountName: 'storage67965'
