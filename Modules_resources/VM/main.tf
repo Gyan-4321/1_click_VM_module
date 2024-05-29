@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "fortest" {
   admin_password = "Radhey@654321"
   disable_password_authentication = false
   network_interface_ids = [
-    data.azurerm_network_interface.testing.id
+    data.azurerm_network_interface.testing[each.key].id
   ]
 
   
