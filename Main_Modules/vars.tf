@@ -29,3 +29,4 @@ variable "vnet90" {
 
 variable "nsgdata" {}
 variable "subnetdata" {}
+variable "pipdata" {}
