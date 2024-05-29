@@ -3,7 +3,7 @@ resource "azurerm_network_interface" "fortest" {
   name                = each.value.name
   location            = each.value.location
   resource_group_name = each.value.resource_group_name
-  network_security_group_id = data.azurerm_network_security_group.testing.id
+  
   
 
   ip_configuration {
