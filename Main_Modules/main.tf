@@ -44,6 +44,7 @@ module "vmtest" {
   vm90   = var.vm90
   subnetdata = var.subnetdata
   nicdata = var.nicdata
+  nsgdata = var.nsgdata
 
   depends_on = [module.rgtest, module.vnettest,module.nictest]
 
