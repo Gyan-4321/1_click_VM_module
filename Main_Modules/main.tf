@@ -8,7 +8,7 @@ module "nictest" {
   source     = "../Modules_resources/nic"
   nic90      = var.nic90
   pipdata = var.pipdata
-  depends_on = [module.rgtest, module.subnettest]
+  depends_on = [module.rgtest, module.subnettest, module.pip]
 }
 
 module "nsgtest" {
