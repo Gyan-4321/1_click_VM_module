@@ -7,6 +7,7 @@ module "rgtest" {
 module "nictest" {
   source     = "../Modules_resources/nic"
   nic90      = var.nic90
+  pipdata = var.pipdata
   depends_on = [module.rgtest, module.subnettest]
 }
 
@@ -20,7 +21,7 @@ module "nsgtest" {
 module "pip" {
   source = "../Modules_resources/pip"
   pip90  = var.pip90
-  pipdata = var.pipdata
+  
 
   depends_on = [module.rgtest]
 
