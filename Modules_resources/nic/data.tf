@@ -9,3 +9,10 @@ data "azurerm_public_ip" "testing" {
   name                = each.value.name
   resource_group_name = each.value.resource_group_name
 }
+
+
+data "azurerm_network_security_group" "testing" {
+  for_each = var.nsgdata
+  name                = each.value.name
+  resource_group_name = each.value.resource_group_name
+}
