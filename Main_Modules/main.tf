@@ -40,6 +40,8 @@ module "vnettest" {
 module "vmtest" {
   source = "../Modules_resources/VM"
   vm90   = var.vm90
+  nsgdata = var.nsgdata
+  subnetdata = var.subnetdata
 
   depends_on = [module.rgtest, module.vnettest,module.nictest]
 
