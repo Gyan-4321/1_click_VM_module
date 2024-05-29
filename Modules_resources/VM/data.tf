@@ -1,4 +1,12 @@
 data "azurerm_network_interface" "testing" {
-  name                = "fortest-nic"
-  resource_group_name = "raju-RG"
+  for_each = var.nsgdata
+  name                = each.value.name
+  resource_group_name = each.value.resource_group_name
+}
+
+data "azurerm_subnet" "fortest" {
+  for_each = var.subnetdata
+  name                 = each.value.name
+  virtual_network_name = each.value.virtual_network_name
+  resource_group_name  = each.value.resource_group_name
 }
