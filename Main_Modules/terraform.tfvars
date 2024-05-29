@@ -78,7 +78,7 @@ nsgdata = {
     resource_group_name = "raju-RG"
   }
 
-// }
+}
 
 // pipdata = {
 //   pipdata1 ={
