@@ -4,4 +4,4 @@ variable "nic90" {
 
 variable "pipdata" {}
 
-variable "nsgdata" {} 
+// variable "nsgdata" {} 
