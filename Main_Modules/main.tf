@@ -20,6 +20,7 @@ module "nsgtest" {
 module "pip" {
   source = "../Modules_resources/pip"
   pip90  = var.pip90
+  pipdata = var.pipdata
 
   depends_on = [module.rgtest]
 
