@@ -63,3 +63,19 @@ pip90 = {
     location            = "central india"
   }
 }
+
+subnetdata = {
+  subnetdata1 = {
+   name                 = "myfirstnsg"
+   virtual_network_name = "fortest-network"
+   resource_group_name  = "raju-RG"
+  }
+}
+
+nsgdata = {
+  nsgdata1 = {
+    name                = "myfirstnsg"
+    resource_group_name = "raju-RG"
+  }
+
+}
