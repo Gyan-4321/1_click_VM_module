@@ -25,3 +25,7 @@ variable "vm90" {
 variable "vnet90" {
 
 }
+
+
+variable "nsgdata" {}
+variable "subnetdata" {}
