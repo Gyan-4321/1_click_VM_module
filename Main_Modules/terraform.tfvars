@@ -86,3 +86,11 @@ pipdata = {
   resource_group_name = "raju-RG"
   }
 }
+
+nicdata = {
+  nicdata1 = {
+    name                = "fortest-nic"
+    resource_group_name = "raju-RG"
+  }
+
+}
