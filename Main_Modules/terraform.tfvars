@@ -72,11 +72,11 @@ subnetdata = {
   }
 }
 
-// nsgdata = {
-//   nsgdata1 = {
-//     name                = "myfirstnsg"
-//     resource_group_name = "raju-RG"
-//   }
+nsgdata = {
+  nsgdata1 = {
+    name                = "myfirstnsg"
+    resource_group_name = "raju-RG"
+  }
 
 // }
 
