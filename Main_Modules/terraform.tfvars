@@ -79,3 +79,10 @@ nsgdata = {
   }
 
 }
+
+pipdata = {
+  pipdata1 ={
+    name                = "public-ip1"
+  resource_group_name = "raju-RG"
+  }
+}
