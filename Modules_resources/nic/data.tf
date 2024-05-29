@@ -5,5 +5,7 @@ data "azurerm_subnet" "testing" {
 }
 
 data "azurerm_public_ip" "testing" {
-  name                = azurerm_public_ip.testing.name
-  resource_group_name = azurerm_virtual_machine.fortest.resource_group_name
+  for_each = var.pipdata
+  name                = each.value.name
+  resource_group_name = each.value.resource_group_name
+}
