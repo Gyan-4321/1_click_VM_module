@@ -1,5 +1,5 @@
 data "azurerm_network_interface" "testing" {
-  for_each = var.nsgdata
+  for_each = var.nicdata
   name                = each.value.name
   resource_group_name = each.value.resource_group_name
 }
@@ -12,7 +12,7 @@ data "azurerm_subnet" "fortest" {
 }
 
 data "azurerm_network_security_group" "testing" {
-  for_each = nsgdata
+  for_each = var.nsgdata
   name                = each.value.name
   resource_group_name = each.value.resource_group_name
 }
