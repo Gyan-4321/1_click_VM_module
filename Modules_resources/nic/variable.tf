@@ -2,6 +2,6 @@ variable "nic90" {
   
 }
 
-variable "pipdata" {}
+// variable "pipdata" {}
 
 // variable "nsgdata" {} 
