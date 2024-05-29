@@ -32,6 +32,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'plan'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/Main_Modules'
     environmentServiceNameAzureRM: 'devopsnew'
 
 - task: TerraformTaskV4@4
