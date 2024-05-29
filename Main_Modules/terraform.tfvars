@@ -72,20 +72,20 @@ subnetdata = {
   }
 }
 
-nsgdata = {
-  nsgdata1 = {
-    name                = "myfirstnsg"
-    resource_group_name = "raju-RG"
-  }
+// nsgdata = {
+//   nsgdata1 = {
+//     name                = "myfirstnsg"
+//     resource_group_name = "raju-RG"
+//   }
 
-}
+// }
 
-pipdata = {
-  pipdata1 ={
-    name                = "public-ip1"
-  resource_group_name = "raju-RG"
-  }
-}
+// pipdata = {
+//   pipdata1 ={
+//     name                = "public-ip1"
+//   resource_group_name = "raju-RG"
+//   }
+// }
 
 nicdata = {
   nicdata1 = {
