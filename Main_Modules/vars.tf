@@ -25,9 +25,9 @@ variable "vm90" {
 variable "vnet90" {
 
 }
-
-
-variable "nsgdata" {}
-variable "subnetdata" {}
 variable "pipdata" {}
 variable "nicdata" {}
+variable "subnetdata2" {}
+variable "vm_instances" {
+  
+}
